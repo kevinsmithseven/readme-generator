@@ -3,12 +3,13 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // const generateMarkdown = require('./utils/generateMarkdown')
 
-const generateReadme = ({ title, description, installation, usage, credits, contribution, testing, license }) =>
+const generateReadme = ({ title, description, installation, usage, credits, contribution, testing, license, github, email }) =>
     `# ${title}
 
 ## Description
 
 ${description}
+need to call function to display license badge?
 
 ## Table of Contents 
 
@@ -31,8 +32,7 @@ ${credits}
 
 ## License
 
-${license}
-need to call function to display license badge?
+This project is covered under the ${license}.
 
 ## How to Contribute
 
@@ -40,7 +40,11 @@ ${contribution}
 
 ## Tests
 
-${testing}`
+${testing}
+
+## Questions
+
+Please visit my [GitHub profile](https://github.com/${github}/) or email me at [${email}](mailto:${email}) with any questions.`
 
 
 // TODO: Create an array of questions for user input
@@ -85,8 +89,17 @@ inquirer
             type: 'list',
             message: 'Please select a license to use for this project',
             name: 'license',
-            choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0', 'Creative Commons Zero v1.0']
-
+            choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0', 'Creative Commons Zero v1.0'],
+        },
+        {
+            type: 'input',
+            message: 'Please enter your Github username:',
+            name: 'github',
+        },
+        {
+            type: 'input',
+            message: 'Please enter your email address:',
+            name: 'email'
         }
     ])
     .then((userinput) => {
