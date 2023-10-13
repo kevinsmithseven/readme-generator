@@ -1,53 +1,7 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const generateMarkdown = require('./utils/generateMarkdown')
+const generateReadme = require('./utils/generateMarkdown')
 
-const generateReadme = ({ title, description, installation, usage, credits, contribution, testing, license, github, email }) =>
-    `# ${title}
-
-## Description
-
-${description}
-need to call function to display license badge?
-
-## Table of Contents 
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-${installation}
-
-## Usage
-
-${usage}
-
-## Credits
-
-${credits}
-
-## License
-
-This project is covered under the ${license}.
-
-## How to Contribute
-
-${contribution}
-
-## Tests
-
-${testing}
-
-## Questions
-
-Please visit my [GitHub profile](https://github.com/${github}/) or email me at [${email}](mailto:${email}) with any questions.`
-
-
-// TODO: Create an array of questions for user input
 inquirer
     .prompt([
         {
@@ -89,7 +43,7 @@ inquirer
             type: 'list',
             message: 'Please select a license to use for this project',
             name: 'license',
-            choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0', 'Creative Commons Zero v1.0'],
+            choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0', 'Creative Commons Zero v1.0', 'No License'],
         },
         {
             type: 'input',
@@ -102,8 +56,8 @@ inquirer
             name: 'email'
         }
     ])
-    .then((userinput) => {
-        const readmePageContent = generateReadme(userinput);
+    .then((input) => {
+        const readmePageContent = generateReadme(input);
 
         fs.writeFile('./output/README.md', readmePageContent, (err) =>
             err ? console.log(err) : console.log('Successfully generated README.md')
