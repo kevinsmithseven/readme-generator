@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Generate badge link based on chosen license
 function renderLicenseBadge(license) {
   switch (license) {
     case 'MIT License':
@@ -15,13 +14,13 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
+
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   return (license === 'No License') ? "" :  "- [License](#license)";
  }
 
-// TODO: Create a function that returns the license section of README
+E
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   return (license === 'No License') ? "" : `## License
