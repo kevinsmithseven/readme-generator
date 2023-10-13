@@ -2,9 +2,9 @@
 
 ## Description
 
-Generates a README.md template that includes relevant user information to dynamically populate the template.
+Enter project description here
 
-![MIT Badge](https://img.shields.io/badge/License-MIT-blue)
+![Apache Badge](https://img.shields.io/badge/License-Apache_2.0-orange)
 
 ## Table of Contents 
 
@@ -15,27 +15,27 @@ Generates a README.md template that includes relevant user information to dynami
 
 ## Installation
 
-test
+Enter installation instructions here
 
 ## Usage
 
-run "node index.js" from command line
+Enter usage information here
 
 ## Credits
 
-Instructors and tutor
+Enter credit information here
 
 ## License
 
-  This project is covered under the MIT License.
+  This project is covered under the Apache License 2.0.
 
 ## How to Contribute
 
-Please email for any questions.
+Enter contribution guidelines here
 
 ## Tests
 
-test
+Enter testing instructions here
 
 ## Questions
 

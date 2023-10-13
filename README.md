@@ -9,8 +9,13 @@ This project is a command-line application that dynamically generates a professi
 Once the user runs the application using the "node index.js" command, a series of questions will appear in the terminal, one at a time, and ask the user to enter information that will be used to populate the README.md template. This will include a project title and description, usage instructions, installation instructions, credits, contribution guidelines and testing instructions. The user will also be given a choice of four licenses that they can select from. If they wish to not use a license, that will be an option. In this case no license information will be displayed in the template. If a license is selected, then a badge for that license will appear in the description section, and the license section will be added to the template. The user will also be asked to enter their GitHub username and email address. These will be inserted as links in the questions section for the user.
 
 Screenshot of the application:
+
+Link to video demonstrating use of the application:
+
+[Demo video of application](https://drive.google.com/file/d/17h9P9nkWesZt-XZsAzXTOvL6o6wlJqXA/view)
     
 ![Screenshot of README Generator](./images/README%20Generator%20App%20Screenshot.png)
+
 
 ## Credits
 
