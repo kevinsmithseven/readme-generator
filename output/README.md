@@ -1,40 +1,42 @@
-# asdsa
+# README Generator
 
 ## Description
 
-asdasd
+Generates a README.md template that includes relevant user information to dynamically populate the template.
 
-
+![MIT Badge](https://img.shields.io/badge/License-MIT-blue)
 
 ## Table of Contents 
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-
+- [License](#license)
 
 ## Installation
 
-asdasd
+test
 
 ## Usage
 
-asdasd
+run "node index.js" from command line
 
 ## Credits
 
-asdasd
+Instructors and tutor
 
+## License
 
+  This project is covered under the MIT License.
 
 ## How to Contribute
 
-asdasd
+Please email for any questions.
 
 ## Tests
 
-asdasd
+test
 
 ## Questions
 
-Please visit my [GitHub profile](https://github.com/asdasd/) or email me at [asdasd@sad.com](mailto:asdasd@sad.com) with any questions.
+Please visit my [GitHub profile](https://github.com/kevinsmithseven/) or email me at [kevin@kevin.com](mailto:kevin@kevin.com) with any questions.

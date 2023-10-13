@@ -20,7 +20,7 @@ function renderLicenseLink(license) {
   return (license === 'No License') ? "" :  "- [License](#license)";
  }
 
-E
+
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   return (license === 'No License') ? "" : `## License
